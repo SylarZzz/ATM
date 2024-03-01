@@ -1,10 +1,10 @@
 public class Account {
-    private String accountNumber;
+    private int accountNumber;
     private String accountHolder;
     private double balance;
 
     // Constructor to initialize account details
-    public Account(String accountNumber, String accountHolder, double initialBalance) {
+    public Account(int accountNumber, String accountHolder, double initialBalance) {
         this.accountNumber = accountNumber;
         this.accountHolder = accountHolder;
         this.balance = initialBalance;
@@ -34,11 +34,11 @@ public class Account {
         System.out.println("Current balance: $" + balance);
     }
 
-    public String getAccountNumber() {
+    public int getAccountNumber() {
         return accountNumber;
     }
 
-    public void setAccountNumber(String accountNumber) {
+    public void setAccountNumber(int accountNumber) {
         this.accountNumber = accountNumber;
     }
 

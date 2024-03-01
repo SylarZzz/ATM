@@ -1,19 +1,19 @@
 public abstract class User {
-    private String userID;
+    private int userID;
     private String username;
-    private String pin;
+    private int pin;
 
-    public User(String userID, String username, String pin) {
+    public User(int userID, String username, int pin) {
         this.userID = userID;
         this.username = username;
         this.pin = pin;
     }
 
-    public String getUserID() {
+    public int getUserID() {
         return userID;
     }
 
-    public void setUserID(String userID) {
+    public void setUserID(int userID) {
         this.userID = userID;
     }
 
@@ -25,11 +25,11 @@ public abstract class User {
         this.username = username;
     }
 
-    public String getPin() {
+    public int getPin() {
         return pin;
     }
 
-    public void setPin(String pin) {
+    public void setPin(int pin) {
         this.pin = pin;
     }
 

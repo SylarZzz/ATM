@@ -1,7 +1,10 @@
 import java.util.Scanner;
 
 public class Administrator extends User {
-    public Administrator(String userID, String username, String pin) {
+
+
+
+    public Administrator(int userID, String username, int pin) {
         super(userID, username, pin);
     }
 
@@ -30,6 +33,8 @@ public class Administrator extends User {
             case 4:
                 viewReports();
                 break;
+            default:
+                System.out.println("Invalid option. Please try again.");
         }
     }
 

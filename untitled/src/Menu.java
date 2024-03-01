@@ -33,14 +33,32 @@ public class Menu {
     }
 
     private void displayCustomerMenu() {
-        // Implementation for displaying customer-specific options and handling their inputs
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter login: ");
+        String login = scanner.nextLine();
+        System.out.print("Enter pin code: ");
+        int pin = scanner.nextInt();
+
+        Account account = new Account(0, login, 0);
+        Customer customer = new Customer(0, login, pin, account);
+
         System.out.println("Customer Menu...");
-        // Add customer menu options here
+        customer.displayMenu();
+
     }
 
     private void displayAdministratorMenu() {
-        // Implementation for displaying administrator-specific options and handling their inputs
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter login: ");
+        String login = scanner.nextLine();
+        System.out.print("Enter pin code: ");
+        int pin = scanner.nextInt();
+
+        Administrator admin = new Administrator(1, login, pin);
+
         System.out.println("Administrator Menu...");
-        // Add administrator menu options here
+        admin.displayMenu();
     }
 }
