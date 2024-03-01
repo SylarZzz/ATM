@@ -21,15 +21,12 @@ public class Administrator extends User {
             case 1:
                 createUserAccount();
                 break;
-
             case 2:
                 updateUserAccount();
                 break;
-
             case 3:
                 deleteUserAccount();
                 break;
-
             case 4:
                 viewReports();
                 break;

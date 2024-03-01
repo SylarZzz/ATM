@@ -25,7 +25,6 @@ public class Customer extends User {
             case 1:
                 checkBalance();
                 break;
-
             case 2:
                 System.out.print("Enter the amount to deposit: ");
                 int depositAmount = input.nextInt();
@@ -34,7 +33,6 @@ public class Customer extends User {
                 }
                 depositFunds(depositAmount);
                 break;
-
             case 3:
                 System.out.print("Enter the amount to withdraw: ");
                 int withdrawAmount = input.nextInt();
@@ -43,7 +41,6 @@ public class Customer extends User {
                 }
                 withdrawFunds(withdrawAmount);
                 break;
-
             case 4:
                 viewTransactionHistory();
         }
